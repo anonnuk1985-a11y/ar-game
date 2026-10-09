@@ -305,12 +305,15 @@
         let roomUnsubscribe = null;
 
         // Firebase Initialization
-        let firebaseConfig = null;
-        try {
-            if (typeof __firebase_config !== 'undefined' && __firebase_config) {
-                firebaseConfig = typeof __firebase_config === 'string' ? JSON.parse(__firebase_config) : __firebase_config;
-            }
-        } catch (e) {}
+        const firebaseConfig = {
+          apiKey: "AIzaSyDPSCIxqWPLk31bH-pvJBnmRFMPfIsoy0Y",
+          authDomain: "ar-games-ed566.firebaseapp.com",
+          projectId: "ar-games-ed566",
+          storageBucket: "ar-games-ed566.firebasestorage.app",
+          messagingSenderId: "188100863214",
+          appId: "1:188100863214:web:c759d81a9e1ddfd7023fff",
+          measurementId: "G-113LVZL2PE"
+        };
 
         if (firebaseConfig) {
             try {
